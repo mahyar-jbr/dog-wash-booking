@@ -1,0 +1,26 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background: #1D3045;
+  overflow-x: hidden;
+}
+
+#root > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Print styles for confirmation page */
+@media print {
+  #root {
+    background: white !important;
+  }
+
+  #root::before {
+    display: none;
+  }
+
+  button {
+    display: none !important;
+  }
+}
